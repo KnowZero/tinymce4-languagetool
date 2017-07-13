@@ -1,0 +1,14 @@
+This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4. It also does things like highlighting as you type and etc.
+
+Currently the code is is EXPIREMENTAL. Use at your own risk. The code is also very messy, stuck in debug mode and does not take any parameters. And it does not allow for clean source or copy and paste viewing.
+
+It is also currently set to process requests when you are on a new line and once every 10 seconds via the public Language Tool site.
+
+There is a few concepts that I am exploring here from making it work:
+
+1 - As you type functionality
+2 - Only check for changes
+
+The plugin already works, but I only tested it for 10 minutes of typing and trying things out. This repository exists to mostly track bugs and etc.
+
+Once I am done coding the basic stuff, I'll clean up the code and make it more presentable. Hopefully sometime this week or the next.
