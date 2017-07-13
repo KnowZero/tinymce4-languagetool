@@ -1,8 +1,10 @@
+Current Version: 0.03-Alpha
+
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4. It also does things like highlighting as you type and etc.
 
-Currently the code is is EXPIREMENTAL. Use at your own risk. The code is also very messy, stuck in debug mode and does not take any parameters. And it does not allow for clean source or copy and paste viewing.
+Currently the code is is EXPIREMENTAL. Use at your own risk.
 
-It is also currently set to process requests when you are on a new line and once every 10 seconds via the public Language Tool site.
+It is also currently set to process requests when you are on a new line and once every 10 seconds via the public Language Tool site. (But you should change it to your own server)
 
 There is a few concepts that I am exploring here from making it work:
 
@@ -23,4 +25,6 @@ lt_timer = Sets the timeout to process spelling and grammar in milliseconds (Def
 lt_lang = Sets the language (Defaults to en-US)
 
 lt_highlight = Object that sets the classes for the highlighting [It is best to edit the CSS instead of touching this]
+
+lt_debug = Set debug level (Defaults to 0 = off)
 
