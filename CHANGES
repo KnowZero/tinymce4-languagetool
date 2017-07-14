@@ -1,3 +1,10 @@
+0.04-Alpha (2017-07-14)
+
+  - Added basic undo support for correcting words.
+  - Added toolbar button
+  - Added lt_postdata to overload HTTP postback
+  - Added ignore to context menu and lt_ignore_callback, lt_ignore_words, lt_ignore_rules
+
 0.03-Alpha (2017-07-13)
 
   - Fixed serializer to remove highlighting (fixes copy and paste for the most part)

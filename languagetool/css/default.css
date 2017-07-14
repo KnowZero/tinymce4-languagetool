@@ -43,12 +43,31 @@
    
 }
 
+
+.context-menu-break {
+
+    font-size:10%;
+    background-color: #DDDDDD;
+    font-weight:bold;
+    padding: 0px 5px;
+   
+}
+
 .context-menu-item {
     padding: 2px 25px;
     cursor: pointer;
 }
 
 .context-menu-item:hover {
+    background-color: #DEF;
+}
+
+.context-menu-ignore {
+    padding: 2px 25px;
+    cursor: pointer;
+}
+
+.context-menu-ignore:hover {
     background-color: #DEF;
 }
 
