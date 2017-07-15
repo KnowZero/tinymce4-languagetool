@@ -1,7 +1,10 @@
+0.07-Alpha (2017-07-15)
+
+  - Adjusted offset for &nbsp;, &gt;, &lt;, &quot;, &amp; and &#XXXX;
+
 0.06-Alpha (2017-07-15)
 
   - Removed reliance on contentType for ajax call to prevent OPTIONS prefetch
-
 
 0.05-Alpha (2017-07-14)
 

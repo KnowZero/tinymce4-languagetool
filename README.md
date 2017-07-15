@@ -1,10 +1,10 @@
-Current Version: 0.06-Alpha
+Current Version: 0.07-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
 Currently the code is is EXPIREMENTAL. Use at your own risk.
 
-It is also currently set to process requests when you are on a new line or end of line, once every 10 seconds via the public Language Tool site. (But you should change it to your own server)
+It is also currently set to process requests when you are on a new line or end of line, once every 10 seconds via the public Language Tool site. (But you should change it to your own server)
 
 There is a few concepts that I am exploring here from making it work:
 
@@ -27,11 +27,11 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
 
 #### Toolbar item name:
 
-  languagetool 
+  languagetool 
 
 #### Options:
 
-  lt_url =  The url of the LanguageTool installation. (Defaults to public server)
+  lt_url =  The url of the LanguageTool installation. (Defaults to public server)
   
   lt_timer = Sets the timeout to process spelling and grammar in milliseconds (Defaults to 10000 which equals 10 seconds) DO NOT LOWER THIS UNLESS YOU USE YOUR OWN INSTALLATION
   
@@ -41,9 +41,9 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   
   lt_debug = Set debug level (Defaults to 0 = off)
   
-  lt_postdata = A HASH/ASSOCIATED ARRAY which appends to the posting of LanguageTool. 
+  lt_postdata = A HASH/ASSOCIATED ARRAY which appends to the posting of LanguageTool. 
   
-  Example: lt_postdata:{ disabledRules:"MORFOLOGIK_RULE_EN_US" } 
+  Example: lt_postdata:{ disabledRules:"MORFOLOGIK_RULE_EN_US" } 
   
   See more at: https://languagetool.org/http-api/swagger-ui/#!/default/post_check
   
@@ -55,14 +55,16 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
 
 #### Syntax:
 
+```
   <script>  
   tinymce.init({  
-    selector: "#mytextarea",  
-    toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | languagetool',  
-    height: 700,  
-    plugins: ['languagetool']  
+    selector: "#mytextarea",  
+    toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | languagetool',  
+    height: 700,  
+    plugins: ['languagetool']  
   });  
   </script>
+```
 
 #### Demo:
 
