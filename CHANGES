@@ -1,10 +1,19 @@
+0.08-Alpha (2017-07-15)
+
+  - Got rid of use of mask in CSS for highltighting and switched to use of SVG
+  - Fixed idle issue due to changes in 0.05-Alpha
+  - The timer now checks for last run time, and if it is within the timer, it will run automatically instead of waiting.
+
+
 0.07-Alpha (2017-07-15)
 
   - Adjusted offset for &nbsp;, &gt;, &lt;, &quot;, &amp; and &#XXXX;
 
+
 0.06-Alpha (2017-07-15)
 
   - Removed reliance on contentType for ajax call to prevent OPTIONS prefetch
+
 
 0.05-Alpha (2017-07-14)
 
@@ -15,6 +24,7 @@
   - Switched from notification of change from just changenode to include '.','!','?' and ENTER
   - Toolbar item can now manage ignore words and rules
 
+
 0.04-Alpha (2017-07-14)
 
   - Added basic undo support for correcting words.
@@ -22,16 +32,19 @@
   - Added lt_postdata to overload HTTP postback
   - Added ignore to context menu and lt_ignore_callback, lt_ignore_words, lt_ignore_rules
 
+
 0.03-Alpha (2017-07-13)
 
   - Fixed serializer to remove highlighting (fixes copy and paste for the most part)
   - Fixed multiline highlighting offset issue
+
 
 0.02-Alpha (2017-07-13)
 
   - Cleaned up code a bit
   - Added support for parameters: lt_url, lt_timer, lt_lang, lt_highlight, lt_debug
   - Fixed name from langaugetools to languagetool
+
 
 0.01-Alpha (2017-07-12)
 

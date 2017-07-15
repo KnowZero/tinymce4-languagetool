@@ -1,4 +1,4 @@
-Current Version: 0.07-Alpha
+Current Version: 0.08-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
