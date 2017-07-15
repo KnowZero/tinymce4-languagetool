@@ -55,6 +55,7 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
 
 #### Syntax:
 
+```
   <script>  
   tinymce.init({  
     selector: "#mytextarea",  
@@ -63,6 +64,7 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
     plugins: ['languagetool']  
   });  
   </script>
+```
 
 #### Demo:
 
