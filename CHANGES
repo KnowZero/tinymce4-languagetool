@@ -1,3 +1,12 @@
+0.05-Alpha (2017-07-14)
+
+  - Fixed BOM messing up offset.
+  - Fixed context menu's ability to locate parent node with uuid
+  - Changed callback for ignore from 'rule' and 'all' to 'addRule' and 'addWord' respectively
+  - Added new callbacks: removeRule and removeWord
+  - Switched from notification of change from just changenode to include '.','!','?' and ENTER
+  - Toolbar item can now manage ignore words and rules
+
 0.04-Alpha (2017-07-14)
 
   - Added basic undo support for correcting words.

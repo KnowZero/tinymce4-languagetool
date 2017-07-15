@@ -1,4 +1,4 @@
-Current Version: 0.04-Alpha
+Current Version: 0.05-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4. It also does things like highlighting as you type and etc.
 
@@ -21,7 +21,7 @@ languagetool
 
 Toolbar item name:
 
-languagetool (unused for now)
+languagetool 
 
 
 Options:
@@ -42,7 +42,7 @@ lt_postdata = A HASH/ASSOCIATED ARRAY which appends to the posting of LanguageTo
 
  See more at: https://languagetool.org/http-api/swagger-ui/#!/default/post_check
 
-lt_ignore_callback = Callback that is called when Ignore Rule or Ignore All is called. You should probably store it in localstorage or in the document if you wish to save user preferences. Callback first parameter is 'rule' or 'all' and second parameter is the word or rule in question.
+lt_ignore_callback = Callback that is called when Ignore Rule or Ignore All is called. You should probably store it in localstorage or in the document if you wish to save user preferences. Callback first parameter is 'addRule', 'addWord', 'removeRule', 'removeWord' and second parameter is the word or rule in question.
 
 lt_ignore_words = A HASH/ASSOCIATED ARRAY of words/phrases to ignore
 
