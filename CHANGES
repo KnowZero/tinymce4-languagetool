@@ -1,3 +1,8 @@
+0.06-Alpha (2017-07-15)
+
+  - Removed reliance on contentType for ajax call to prevent OPTIONS prefetch
+
+
 0.05-Alpha (2017-07-14)
 
   - Fixed BOM messing up offset.
