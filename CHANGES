@@ -1,3 +1,10 @@
+0.10-Alpha (2017-07-16)
+
+  - Moved parent node finding into a function.
+  - Added parent node finding to all node changes.
+  - Change node now better assists in cycling the spelling/grammar check
+
+
 0.09-Alpha (2017-07-16)
 
   - Fix parent node not found error on context menu when clicking on the HTML node
