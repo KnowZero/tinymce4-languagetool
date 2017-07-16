@@ -42,10 +42,17 @@
 
 }
 
-.context-menu-ul {
+
+#context-menu-nav {
     display: none;
-    z-index: 1000;
     position: absolute;
+    z-index: 1000;
+
+}
+
+#context-menu-ul {
+
+
     overflow: hidden;
     border: 1px solid #CCC;
     white-space: nowrap;
@@ -78,6 +85,8 @@
 }
 
 .context-menu-item {
+    position: relative;
+    float: top;
     padding: 2px 25px;
     cursor: pointer;
 }
@@ -85,6 +94,9 @@
 .context-menu-item:hover {
     background-color: #DEF;
 }
+
+
+
 
 .context-menu-ignore {
     padding: 2px 25px;
@@ -95,3 +107,35 @@
     background-color: #DEF;
 }
 
+
+
+#context-submenu-ul {
+    display: none;
+    z-index: 1001;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 0px;
+    top: 15px;
+    left: 100%;
+    font-size: 0.8em;
+}
+
+#context-menu-item-list {
+    padding: 2px 25px;
+    cursor: pointer;
+}
+
+#context-menu-item-list:hover {
+    background-color: #DEF;
+}
+
+
+#context-menu-item-list:hover > #context-submenu-ul {
+	display:block
+}

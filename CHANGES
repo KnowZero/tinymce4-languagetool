@@ -1,3 +1,9 @@
+0.09-Alpha (2017-07-16)
+
+  - Fix parent node not found error on context menu when clicking on the HTML node
+  - Converted context menu classes to ids and put it in a div
+  - Context menu now limits suggestion to 10 + adds a More... option beyond that
+
 0.08-Alpha (2017-07-15)
 
   - Got rid of use of mask in CSS for highltighting and switched to use of SVG
