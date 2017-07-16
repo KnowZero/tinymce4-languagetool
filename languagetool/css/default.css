@@ -121,10 +121,23 @@
     border-radius: 5px;
     list-style-type: none;
     padding: 0px;
-    top: 15px;
-    left: 100%;
     font-size: 0.8em;
 }
+
+.context-submenu-ul-left {
+    left: 100%;
+}
+.context-submenu-ul-right {
+    right: 100%;
+}
+
+.context-submenu-ul-top {
+    top: 15px;
+}
+.context-submenu-ul-bottom {
+    bottom: 15px;
+}
+
 
 #context-menu-item-list {
     padding: 2px 25px;
