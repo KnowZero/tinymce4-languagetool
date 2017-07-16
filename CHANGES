@@ -1,8 +1,14 @@
+0.12-Alpha (2017-07-16)
+
+  - Fixed Paste issue when dealing with same line.
+
+
 0.11-Alpha (2017-07-16)
 
   - Fixed minor issue where left clicking on BODY element gave an error
   - Fixed context menu to be edge aware
   - Break highlight on newline, period, comma and etc.
+
 
 0.10-Alpha (2017-07-16)
 
