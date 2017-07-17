@@ -1,3 +1,11 @@
+0.14-Alpha (2017-07-17)
+
+  - Fixed issue where context menu only worked when selector was editor-content
+  - Added information about use of paste plugin to documentation
+  - Moved setcontent into a seperate function
+  - Got rid of a console.log that got left behind in 0.13-Alpha
+
+
 0.13-Alpha (2017-07-17)
 
   - Fixed outside latin-1 issue

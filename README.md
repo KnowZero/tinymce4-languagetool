@@ -1,4 +1,4 @@
-Current Version: 0.13-Alpha
+Current Version: 0.14-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
@@ -20,6 +20,8 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   jQuery 1.X+
 
   TinyMCE 4.X
+
+  TinyMCE paste plugin - (optional) if you want to autocheck on paste
 
 #### Plugin name:
 
@@ -61,7 +63,7 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
     selector: "#mytextarea",  
     toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | languagetool',  
     height: 700,  
-    plugins: ['languagetool']  
+    plugins: ['languagetool paste']  
   });  
   </script>
 ```
