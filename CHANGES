@@ -1,3 +1,9 @@
+0.15-Alpha (2017-07-19)
+
+  - Added compatibility with contextmenu plugin, contextmenu will not show up when clicking highlighted items
+  - Added lt_monopolize_highlight_contextmenu option which is set to true by default
+  - Changed mouse icon on mouseover to make it easier to tell if mouse is over a highlighted item, especially when dealing with single letters
+
 0.14-Alpha (2017-07-17)
 
   - Fixed issue where context menu only worked when selector was editor-content

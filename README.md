@@ -1,4 +1,4 @@
-Current Version: 0.14-Alpha
+Current Version: 0.15-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
@@ -40,6 +40,8 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   lt_lang = Sets the language (Defaults to en-US)
   
   lt_highlight = Object that sets the classes for the highlighting [It is best to edit the CSS instead of touching this]
+
+  lt_monopolize_highlight_contextmenu = When true, this will hide the contextmenu plugin and prevent all furthur events on the 'contextmenu' event when you click on highlighted words/phrases (Defaults to true)
   
   lt_debug = Set debug level (Defaults to 0 = off)
   
