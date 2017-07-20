@@ -65,7 +65,7 @@ Debug Level: <select id="setDebug"><option value="5" selected>DEBUG(5)</option><
 
 $(document).on('click','#startEditor',function () {
 
-    if ( /\/\/\w+?\.github\.io/i.test( window.location.hostname ) ) {
+    if ( /^\w+?\.github\.io/i.test( window.location.hostname ) ) {
         console.log( "HOST1="+window.location.hostname );
     } else {
         console.log( "HOST0="+window.location.hostname );
