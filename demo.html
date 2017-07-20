@@ -46,7 +46,7 @@ Language: <select id="setLanguage"><option value="en-US">English (US)</option></
 <br><br>
 Suggestions Context Menu: <select id="setMenu"><option value="right" selected>Right Click</option><option value="left">Left Click</option></select>
 <br><br>
-Emulate Mode: <select id="setMode"><option value="500">Private Server</option><option value="10000">Public Server</option></select><br>
+Emulate Mode: <select id="setMode"><option value="500" selected>Private Server</option><option value="10000">Public Server</option></select><br>
 <i>Private server is an example of the responsiveness you will get if you set your own languagetool private server (500ms or 0.5 seconds), public server is an example of the responsiveness you will get using the public server (10000ms or 10 seconds). The server will begin processing after you finish writing the line/paragraph</i>
 <hr size=1>
 
@@ -56,6 +56,7 @@ Emulate Mode: <select id="setMode"><option value="500">Private Server</option><o
 
 <script>
 $(document).on('click','#startEditor',function () {
+
 tinymce.init({
   selector: "#mytextarea",
   toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | languagetool',
