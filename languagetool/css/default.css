@@ -23,7 +23,7 @@ cursor: help;
 #context-menu-nav {
     display: none;
     position: absolute;
-    z-index: 1000;
+    z-index: 65999;
 
 }
 
