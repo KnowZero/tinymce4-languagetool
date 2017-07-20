@@ -48,6 +48,9 @@ Suggestions Context Menu: <select id="setMenu"><option value="right" selected>Ri
 <br><br>
 Emulate Mode: <select id="setMode"><option value="500" selected>Private Server</option><option value="10000">Public Server</option></select><br>
 <i>Private server is an example of the responsiveness you will get if you set your own languagetool private server (500ms or 0.5 seconds), public server is an example of the responsiveness you will get using the public server (10000ms or 10 seconds). The server will begin processing after you finish writing the line/paragraph</i>
+<br><br>
+Debug Level: <select id="setDebug"><option value="5" selected>DEBUG(5)</option><option value="0">NONE(0)</option><option value="4">INFO(4)</option><option value="6">TRACE(6)</option></select><br>
+<i>0 would be the fastest but least preferable since you would not be able to debug via console.log, but if you want to just check speed, that would be the best option. For highest debug level is TRACE at 6.</i>
 <hr size=1>
 
 <input type="Button" value="Continue" id="startEditor">
@@ -55,13 +58,16 @@ Emulate Mode: <select id="setMode"><option value="500" selected>Private Server</
 </div>
 
 <script>
+
+
+
 $(document).on('click','#startEditor',function () {
 
 tinymce.init({
   selector: "#mytextarea",
   toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | languagetool',
   height: 700,
-  lt_debug: 5,
+  lt_debug: $('#setDebug').val(),
   lt_lang: $('#setLanguage').val(),
   lt_highlight_click: $('#setMenu').val(),
   lt_timer: $('#setMode').val(),
@@ -75,8 +81,23 @@ $('#showNotice').hide();
 
 });
 
+$(document).on('click','#shMail',function () {
+$(this).html( atob(atob('YTI1dmQzcGxjbTk0'))+'@'+atob('eWFob28uY29t') );
+});
+
 </script>
 
+<hr size=1>
+Github for bug reports:(Please mention browser and version)
+<br>
+Preferred Method:<br>
+<a href="https://github.com/KnowZero/tinymce4-languagetool" target="_blank">https://github.com/KnowZero/tinymce4-languagetool</a><br>
+Alternative method:(Email)<br>
+<div id="shMail"><b>Click Here to Show</b></div>
+
+
+
+<hr size=1>
 
 <textarea id="mytextarea"></textarea>
 
