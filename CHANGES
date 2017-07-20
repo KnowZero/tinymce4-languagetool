@@ -1,6 +1,13 @@
+0.18-Alpha (2017-07-20)
+
+  - Added lt_full_message option
+  - Fixed CSS to set max width to 40% and wordwrap
+  - Added safety mechanism to lt_timer
+
+
 0.17-Alpha (2017-07-20)
 
-  - Fixed lt_highlight_click set to left would still show contextmenu for right clicking.
+  - Fixed lt_highlight_click set to left would still show contextmenu for right clicking
 
 
 0.16-Alpha (2017-07-20)

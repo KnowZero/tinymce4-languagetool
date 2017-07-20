@@ -46,6 +46,8 @@ Language: <select id="setLanguage"><option value="en-US">English (US)</option></
 <br><br>
 Suggestions Context Menu: <select id="setMenu"><option value="right" selected>Right Click</option><option value="left">Left Click</option></select>
 <br><br>
+Context Menu Message Size: <select id="setMessage"><option value="0" selected>Short Message if available</option><option value="1">Long Message</option></select>
+<br><br>
 Emulate Mode: <select id="setMode"><option value="500" selected>Private Server</option><option value="10000">Public Server</option></select><br>
 <i>Private server is an example of the responsiveness you will get if you set your own languagetool private server (500ms or 0.5 seconds), public server is an example of the responsiveness you will get using the public server (10000ms or 10 seconds). The server will begin processing after you finish writing the line/paragraph</i>
 <br><br>
@@ -70,6 +72,7 @@ tinymce.init({
   lt_debug: $('#setDebug').val(),
   lt_lang: $('#setLanguage').val(),
   lt_highlight_click: $('#setMenu').val(),
+  lt_full_message: $('#setMessage').val(),
   lt_timer: $('#setMode').val(),
   content_css : 'https://knowzero.github.io/tinymce4-languagetool/languagetool/css/default.css',
   plugins: ['code paste'],

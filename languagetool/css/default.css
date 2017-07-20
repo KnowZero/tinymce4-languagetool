@@ -23,6 +23,7 @@ cursor: help;
 #context-menu-nav {
     display: none;
     position: absolute;
+    max-width: 40%;
     z-index: 65999;
 
 }
@@ -32,7 +33,6 @@ cursor: help;
 
     overflow: hidden;
     border: 1px solid #CCC;
-    white-space: nowrap;
     background: #FFF;
     color: #333;
     border-radius: 5px;
@@ -48,7 +48,7 @@ cursor: help;
     background-color: #DDDDDD;
     font-weight:bold;
     padding: 0px 5px;
-   
+
 }
 
 
