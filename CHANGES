@@ -1,3 +1,15 @@
+0.19-Alpha (2017-07-23)
+
+  - Added prioritized queue based processing
+  - Added multiple instance support
+  - Added content-length limits
+  - Added progress bar and issue counting
+  - Prevented multiple timers
+  - Cleanup some duplicate inline tags prior to highlight
+  - Added Dialog Find/Replace
+  - Moved context menus to functions
+
+
 0.18-Alpha (2017-07-20)
 
   - Added lt_full_message option

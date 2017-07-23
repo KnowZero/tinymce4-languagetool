@@ -1,4 +1,4 @@
-Current Version: 0.18-Alpha
+Current Version: 0.19-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
@@ -46,6 +46,8 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   lt_highlight_click = Set which click you wish the context menu to be tiggered on, possible options include: left or right (Defaults to right)
   
   lt_full_message = If set to true, will force to use the long message descriptions, if false it will use the short descriptions and if not available, only then use the long ones (Defaults to false)
+
+  lt_size_of_instances = Set content length limit sent to LanguageTool per request. (Defaults to 10000 for public server and 25000 for private) DO NOT INCREASE THIS UNLESS YOU USE YOUR OWN INSTALLATION
 
   lt_debug = Set debug level (Defaults to 0 = off)
   
