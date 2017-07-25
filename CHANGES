@@ -1,3 +1,12 @@
+0.20-Alpha (2017-07-24)
+
+  - Fixed regression that prevented processing on end of sentence.
+  - Added mceLTDisable and mceLTEnabled commands for turning LT processing on and off
+  - Fixed first char bookmark issue
+  - Highlight now disapears and rechecks on manual edit
+  - Finalized lt_max_instances to limit parallel instances
+
+
 0.19-Alpha (2017-07-23)
 
   - Added prioritized queue based processing

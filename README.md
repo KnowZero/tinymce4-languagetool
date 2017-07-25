@@ -1,4 +1,4 @@
-Current Version: 0.19-Alpha
+Current Version: 0.20-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
@@ -49,6 +49,8 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
 
   lt_size_of_instances = Set content length limit sent to LanguageTool per request. (Defaults to 10000 for public server and 25000 for private) DO NOT INCREASE THIS UNLESS YOU USE YOUR OWN INSTALLATION
 
+  lt_max_instances = How many instance are allowed in parrelel [They will still respect the timers] (Defaults to 1 for public server and 2 for private server)
+
   lt_debug = Set debug level (Defaults to 0 = off)
   
   lt_postdata = A HASH/ASSOCIATED ARRAY which appends to the posting of LanguageTool. 
@@ -62,6 +64,12 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   lt_ignore_words = A HASH/ASSOCIATED ARRAY of words/phrases to ignore
   
   lt_ignore_rules = A HASH/ASSOCIATED ARRAY of rules to ignore
+
+#### Commands:
+
+  mceLTDisable = Disable new content from entering the LT processing queue
+
+  mceLTEnable = Enable new content to enter the LT processing queue
 
 #### Syntax:
 
