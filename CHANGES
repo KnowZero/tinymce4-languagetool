@@ -2,6 +2,7 @@
 
   - Highlight now disapears when character input is in front or back of the word.
   - Fixed progressbar when copy and pasting
+  - Added lt_show_progress_bar to show and hide progress bar
 
 
 0.21-Alpha (2017-07-25)
