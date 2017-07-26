@@ -1,4 +1,4 @@
-Current Version: 0.23-Alpha
+Current Version: 0.24-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
@@ -56,16 +56,20 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   lt_debug = Set debug level (Defaults to 0 = off)
   
   lt_postdata = A HASH/ASSOCIATED ARRAY which appends to the posting of LanguageTool. 
+
+    Example: lt_postdata:{ disabledRules:"MORFOLOGIK_RULE_EN_US" } 
   
-  Example: lt_postdata:{ disabledRules:"MORFOLOGIK_RULE_EN_US" } 
-  
-  See more at: https://languagetool.org/http-api/swagger-ui/#!/default/post_check
+    See more at: https://languagetool.org/http-api/swagger-ui/#!/default/post_check
   
   lt_ignore_callback = Callback that is called when Ignore Rule or Ignore All is called. You should probably store it in localstorage or in the document if you wish to save user preferences. Callback first parameter is 'addRule', 'addWord', 'removeRule', 'removeWord' and second parameter is the word or rule in question.
   
   lt_ignore_words = A HASH/ASSOCIATED ARRAY of words/phrases to ignore
   
   lt_ignore_rules = A HASH/ASSOCIATED ARRAY of rules to ignore
+
+  lt_ignore_block_tags = A HASH/ASSOCIATED ARRAY which sets a block list for tags you don't want UUIDs assigned to. [This is advanced functionality ment to filter out block containers, for example, you may be making your content divided into chapters via section tag. Currently section tag would force the entire content to be sent to the system instead of dividing it up. By including the section tag to be ignored, it would then default back to the P tags]
+
+    Example: lt_ignore_block_tags:{ 'SECTION':1 } 
 
 #### Commands:
 

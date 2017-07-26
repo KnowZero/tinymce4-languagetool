@@ -1,11 +1,19 @@
+0.24-Alpha (2017-07-26)
+
+  - Added lt_ignore_block_tags
+  - Moved UUID creation into its own function
+  - Added B, U and I to tag find exclusion
+  - Put more reliance on lt-highlight and replaced hlt1 with lt-highlight-remove
+
+
 0.23-Alpha (2017-07-25)
 
-  - Added improvements to highlight disapearing when DEL or backspace key is used.
+  - Added improvements to highlight disapearing when DEL or backspace key is used
 
 
 0.22-Alpha (2017-07-25)
 
-  - Highlight now disapears when character input is in front or back of the word.
+  - Highlight now disapears when character input is in front or back of the word
   - Fixed progressbar when copy and pasting
   - Added lt_show_progress_bar to show and hide progress bar
 
