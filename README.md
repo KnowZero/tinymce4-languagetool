@@ -1,4 +1,4 @@
-Current Version: 0.25-Alpha
+Current Version: 0.26-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
@@ -39,6 +39,14 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   
   lt_lang = Sets the language (Defaults to en-US)
   
+  lt_mode = Sets the processing mode (Defaults to new_sentece)
+  
+     Available modes:
+	
+	    new_sentece = Processing starts on new line, period, exclamation mark and question mark.
+	    new_word = Processing starts same as above plus comma and space. (not suggested on public instance)
+
+  
   lt_highlight = Object that sets the classes for the highlighting [It is best to edit the CSS instead of touching this]
 
   lt_monopolize_highlight_contextmenu = When true, this will hide the contextmenu plugin and prevent all furthur events on the 'contextmenu' event when you click on highlighted words/phrases (Defaults to true)
@@ -70,6 +78,10 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   lt_ignore_block_tags = A HASH/ASSOCIATED ARRAY which sets a block list for tags you don't want UUIDs assigned to. [This is advanced functionality ment to filter out block containers, for example, you may be making your content divided into chapters via section tag. Currently section tag would force the entire content to be sent to the system instead of dividing it up. By including the section tag to be ignored, it would then default back to the P tags]
 
     Example: lt_ignore_block_tags:{ 'SECTION':1 } 
+    
+  lt_ignore_selector = Same as above but uses selectors instead of a HASH of tags
+  
+    Example: lt_ignore_selector:'section, header, article' 
 
 #### Commands:
 

@@ -1,3 +1,15 @@
+0.26-Alpha (2017-07-26)
+
+  - Disabled undefined from being queued
+  - Added lt_ignore_selector
+  - Recheck UUID setting on tags inserted via the DOM once you type in it. 
+  - Moved active editor to their own functions for future modular upgrade
+  - Added lt_mode
+  - Implemented inactive queue
+  - Added function support for delayed queue and inactive queue
+  - Set inactive queue to check when in middle of sentence
+  
+
 0.25-Alpha (2017-07-26)
 
   - Serializer fix
