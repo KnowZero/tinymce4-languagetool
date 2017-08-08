@@ -1,0 +1,186 @@
+0.26-Alpha (2017-07-26)
+
+  - Disabled undefined from being queued
+  - Added lt_ignore_selector
+  - Recheck UUID setting on tags inserted via the DOM once you type in it. 
+  - Moved active editor to their own functions for future modular upgrade
+  - Added lt_mode
+  - Implemented inactive queue
+  - Added function support for delayed queue and inactive queue
+  - Converted highlight removal by manual editing to 2000ms and set it as inactive queue with 15000 delay queue.
+  
+
+0.25-Alpha (2017-07-26)
+
+  - Serializer fix
+  - Fix regression where clear did not work
+
+
+0.24-Alpha (2017-07-26)
+
+  - Added lt_ignore_block_tags
+  - Moved UUID creation into its own function
+  - Added B, U and I to tag find exclusion
+  - Put more reliance on lt-highlight and replaced hlt1 with lt-highlight-remove
+
+
+0.23-Alpha (2017-07-25)
+
+  - Added improvements to highlight disapearing when DEL or backspace key is used
+
+
+0.22-Alpha (2017-07-25)
+
+  - Highlight now disapears when character input is in front or back of the word
+  - Fixed progressbar when copy and pasting
+  - Added lt_show_progress_bar to show and hide progress bar
+
+
+0.21-Alpha (2017-07-25)
+
+  - Fixed regression in 0.20-Alpha which prevented processing if timer was set too low
+  - Fixed BR tag handling
+
+
+0.20-Alpha (2017-07-24)
+
+  - Fixed regression that prevented processing on end of sentence.
+  - Added mceLTDisable and mceLTEnabled commands for turning LT processing on and off
+  - Fixed first char bookmark issue
+  - Highlight now disapears and rechecks on manual edit
+  - Finalized lt_max_instances to limit parallel instances
+  - Added filters to Dialog Find/Replace
+
+
+0.19-Alpha (2017-07-23)
+
+  - Added prioritized queue based processing
+  - Added multiple instance support
+  - Added content-length limits
+  - Added progress bar and issue counting
+  - Prevented multiple timers
+  - Cleanup some duplicate inline tags prior to highlight
+  - Added Dialog Find/Replace
+  - Moved context menus to functions
+
+
+0.18-Alpha (2017-07-20)
+
+  - Added lt_full_message option
+  - Fixed CSS to set max width to 40% and wordwrap
+  - Added safety mechanism to lt_timer
+
+
+0.17-Alpha (2017-07-20)
+
+  - Fixed lt_highlight_click set to left would still show contextmenu for right clicking
+
+
+0.16-Alpha (2017-07-20)
+
+  - Set context menu above other ui objects like table editor
+  - Set minimum processing size to length of 2 instead of 3
+  - SetContent now does deep scanning for blocks and only assigns UUID to the lowest block
+  - Moved contextmenu to its own function
+  - Added lt_highlight_click with options of right or left click
+  - Updated demo to screen options
+
+
+0.15-Alpha (2017-07-19)
+
+  - Added compatibility with contextmenu plugin, contextmenu will not show up when clicking highlighted items
+  - Added lt_monopolize_highlight_contextmenu option which is set to true by default
+  - Changed mouse icon on mouseover to make it easier to tell if mouse is over a highlighted item, especially when dealing with single letters
+
+0.14-Alpha (2017-07-17)
+
+  - Fixed issue where context menu only worked when selector was editor-content
+  - Added information about use of paste plugin to documentation
+  - Moved setcontent into a seperate function
+  - Got rid of a console.log that got left behind in 0.13-Alpha
+
+
+0.13-Alpha (2017-07-17)
+
+  - Fixed outside latin-1 issue
+  - Fixed multi-line paste regression that appears in 0.12-Alpha
+  - Fixed sending of duplication of the pastebin to the parsing server
+  - Fixed context menu issue when scrolling down
+
+
+0.12-Alpha (2017-07-16)
+
+  - Fixed paste issue when dealing with same line.
+
+
+0.11-Alpha (2017-07-16)
+
+  - Fixed minor issue where left clicking on BODY element gave an error
+  - Fixed context menu to be edge aware
+  - Break highlight on newline, period, comma and etc.
+
+
+0.10-Alpha (2017-07-16)
+
+  - Moved parent node finding into a function
+  - Added parent node finding to all node changes
+  - Change node now better assists in cycling the spelling/grammar check
+
+
+0.09-Alpha (2017-07-16)
+
+  - Fix parent node not found error on context menu when clicking on the HTML node
+  - Converted context menu classes to ids and put it in a div
+  - Context menu now limits suggestion to 10 + adds a More... option beyond that
+
+0.08-Alpha (2017-07-15)
+
+  - Got rid of use of mask in CSS for highltighting and switched to use of SVG
+  - Fixed idle issue due to changes in 0.05-Alpha
+  - The timer now checks for last run time, and if it is within the timer, it will run automatically instead of waiting.
+
+
+0.07-Alpha (2017-07-15)
+
+  - Adjusted offset for &nbsp;, &gt;, &lt;, &quot;, &amp; and &#XXXX;
+
+
+0.06-Alpha (2017-07-15)
+
+  - Removed reliance on contentType for ajax call to prevent OPTIONS prefetch
+
+
+0.05-Alpha (2017-07-14)
+
+  - Fixed BOM messing up offset.
+  - Fixed context menu's ability to locate parent node with uuid
+  - Changed callback for ignore from 'rule' and 'all' to 'addRule' and 'addWord' respectively
+  - Added new callbacks: removeRule and removeWord
+  - Switched from notification of change from just changenode to include '.','!','?' and ENTER
+  - Toolbar item can now manage ignore words and rules
+
+
+0.04-Alpha (2017-07-14)
+
+  - Added basic undo support for correcting words.
+  - Added toolbar button
+  - Added lt_postdata to overload HTTP postback
+  - Added ignore to context menu and lt_ignore_callback, lt_ignore_words, lt_ignore_rules
+
+
+0.03-Alpha (2017-07-13)
+
+  - Fixed serializer to remove highlighting (fixes copy and paste for the most part)
+  - Fixed multiline highlighting offset issue
+
+
+0.02-Alpha (2017-07-13)
+
+  - Cleaned up code a bit
+  - Added support for parameters: lt_url, lt_timer, lt_lang, lt_highlight, lt_debug
+  - Fixed name from langaugetools to languagetool
+
+
+0.01-Alpha (2017-07-12)
+
+  - First release
