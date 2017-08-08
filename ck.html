@@ -1,0 +1,153 @@
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script src="http://cdn.ckeditor.com/4.5.6/standard/ckeditor.js"></script>
+</head>
+<body>
+This is an example of the modular library tested on CKEditor. (Only the basics have been implemented)
+
+<textarea name="editor1"></textarea>
+
+<script>
+CKEDITOR.plugins.add( 'languagetool', {
+    icons: 'spellcheck',
+    init: function( editor ) {
+var url = this.path;
+if ( editor.config['lt_library_path'] != undefined  ) {
+url=editor.config['lt_library_path'];
+}
+
+var scriptpath=url + '/include/languagetool.min.js';
+
+CKEDITOR.scriptLoader.load( scriptpath, function () {
+
+ var LT = new LanguageTool( editor.config );
+
+
+LT.setFunction('bookmark',function (bm) {
+if ( bm == undefined ) {
+return editor.getSelection().createBookmarks(true);
+} else {
+return editor.getSelection().selectBookmarks(bm);
+}
+});
+
+LT.setFunction('body',function () {
+return editor.document.getBody();
+});
+
+LT.setFunction('id',function () {
+return editor.name;
+});
+
+LT.setFunction('container',function () {
+return '.cke_wysiwyg_frame';
+});
+
+
+LT.setFunction('selectnode',function () {
+return editor.getSelection().getStartElement().$;
+});
+
+LT.setFunction('setundo',function (msg) {
+editor.fire( 'saveSnapshot' );
+});
+
+LT.setFunction('setcss',function (path) {
+ editor.document.appendStyleSheet( url + path );
+});
+
+
+LT.setFunction('progress_container',function () {
+
+});
+
+LT.setFunction('progress_init',function () {
+});
+
+
+LT.setFunction('contextmenu_hide',function () { console.log( $(document.body).find("div:last").get(0) );
+
+});
+
+
+
+// Register Events
+
+
+
+
+ editor.on('instanceReady',  function(el) { 
+
+	        dataProcessor = el.editor.dataProcessor,
+			htmlFilter = dataProcessor && dataProcessor.htmlFilter,
+htmlFilter.addRules({
+				elements: {
+        span: function( element ) {
+
+if ( element.hasClass('lt-highlight') ) {
+delete element.name;
+}
+return element;
+
+        }
+}
+    });
+
+
+
+LT.getEvent('init'); 
+console.log( el.editor.document );
+
+  el.editor.document.on('keypress',function(e) { LT.getEvent('keypress',this,e.data.$); });
+  el.editor.document.on('keyup',function(e) { LT.getEvent('keyup',this,e.data.$); });
+  el.editor.document.on('keydown',function(e) { LT.getEvent('keydown',this,e.data.$); });
+
+ //editor.on('NodeChange', function(e) { LT.getEvent('nodechange',this,e); });
+ //editor.on('SetContent', function(e) { LT.getEvent('setcontent',this,e); });
+
+  el.editor.document.on('contextmenu', function(e) { return LT.getEvent('contextmenu',this,e.data.$);  });
+  el.editor.document.on('mousedown', function(e) { LT.getEvent('mousedown',this,e.data.$); });
+
+
+ });
+
+
+
+
+
+
+
+    
+
+});
+
+}
+
+});
+</script>
+
+
+<script>
+
+CKEDITOR.config.removePlugins = 'scayt,contextmenu,tabletools';
+
+CKEDITOR.replace('editor1', {
+    extraPlugins: 'languagetool',
+lt_ignore_block_tags:{ 'SECTION':1, 'ARTICLE':1, 'HEADER':1, 'H1':1, 'H2':1, 'H3':3 },
+lt_ignore_selector:'section, article, header, h1, h2, h3',
+lt_debug: 9,
+//lt_url:'http://localhost:8081/v2/check', 
+lt_timer: 500,
+
+lt_postdata: { disabledRules:"UPPER_UNKNOWN_NNP_UPPERCASE_SEQ" },
+lt_library_path: 'https://github.com/KnowZero/tinymce4-languagetool/blob/master/languagetool'
+} );
+
+</script>
+
+</body>
+</html>
