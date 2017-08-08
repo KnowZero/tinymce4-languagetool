@@ -1,3 +1,9 @@
+0.29-Alpha (2017-08-08)
+
+   - Fix issue with container not being modular
+   - Added small CKEdtitor demo to show of concept
+
+
 0.28-Alpha (2017-08-07)
 
   - Split TinyMCE dependency into seperate files
