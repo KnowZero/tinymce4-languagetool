@@ -1,3 +1,8 @@
+0.30-Alpha (2017-08-08)
+
+   - Fix createDocumentFragment issue preventing compatibility with jquery 3.X
+
+
 0.29-Alpha (2017-08-08)
 
    - Fix issue with container not being modular
