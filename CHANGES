@@ -1,4 +1,11 @@
-0.30-Alpha (2017-08-08)
+0.31-Alpha (2017-08-16)
+
+   - Added remove event
+   - Moved document events to variables
+   - Added statusbar check
+
+
+0.30-Alpha (2017-08-14)
 
    - Fix createDocumentFragment issue preventing compatibility with jquery 3.X
 
