@@ -45,6 +45,7 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
 	
 	    new_sentece = Processing starts on new line, period, exclamation mark and question mark.
 	    new_word = Processing starts same as above plus comma and space. (not suggested on public instance)
+	    manual = Processing will be done manually with mceLTProcess command.
 
   
   lt_highlight = Object that sets the classes for the highlighting [It is best to edit the CSS instead of touching this]
@@ -88,6 +89,8 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   mceLTDisable = Disable new content from entering the LT processing queue
 
   mceLTEnable = Enable new content to enter the LT processing queue
+
+  mceLTProcess = Process manually
 
 #### Syntax:
 

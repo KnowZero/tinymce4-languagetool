@@ -96,8 +96,14 @@ $(document).on('click','#shMail',function () {
 $(this).html( atob(atob('YTI1dmQzcGxjbTk0'))+'@'+atob('eWFob28uY29t') );
 });
 
+$(document).on('click','#processManual',function() {
+tinymce.get('mytextarea').execCommand( 'mceLTProcess');
+});
+
 </script>
 
+<hr size=1>
+<button id="processManual">MANUAL PROCESS</button>
 <hr size=1>
 Github for bug reports:(Please mention browser and version)
 <br>

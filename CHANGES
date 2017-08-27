@@ -1,3 +1,9 @@
+0.32-Alpha (2017-08-27)
+
+   - Added manual process mode and mceLTProcess execCommand
+   - Pass $ in tinymce plugin
+
+
 0.31-Alpha (2017-08-16)
 
    - Added remove event
