@@ -1,4 +1,4 @@
-Current Version: 0.33-Alpha
+Current Version: 0.34-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
@@ -37,7 +37,7 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   
   lt_timer = Sets the timeout to process spelling and grammar in milliseconds (Defaults to 10000 which equals 10 seconds) DO NOT LOWER THIS UNLESS YOU USE YOUR OWN INSTALLATION
   
-  lt_lang = Sets the language (Defaults to en-US)
+  lt_lang = Sets the language (Defaults to en-US) (You can use 'auto' to have languagetool detect automatically)
   
   lt_mode = Sets the processing mode (Defaults to new_sentece)
   
