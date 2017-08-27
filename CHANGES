@@ -1,3 +1,8 @@
+0.33-Alpha (2017-08-27)
+
+   - jQuery noconflict fixes
+
+
 0.32-Alpha (2017-08-27)
 
    - Added manual process mode and mceLTProcess execCommand
