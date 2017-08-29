@@ -1,3 +1,11 @@
+0.35-Alpha (2017-08-29)
+
+   - Ignore new line text nodes during processing
+   - Check for inactivity on scroll
+   - Minor performance tweak on timer
+   - Added lt_viewport_process
+
+
 0.34-Alpha (2017-08-27)
 
    - Progressbar fix

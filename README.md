@@ -1,4 +1,4 @@
-Current Version: 0.34-Alpha
+Current Version: 0.35-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
@@ -47,6 +47,15 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
 	    new_word = Processing starts same as above plus comma and space. (not suggested on public instance)
 	    manual = Processing will be done manually with mceLTProcess command.
 
+  lt_viewport_process = Sets the viewport processing mode (Defaults to disabled)
+
+     Available modes:
+
+	    disabled = Will process the entire document off the bat. (Long initial load)
+	    only = Will process only the stuff in your viewport. (Fast initial load, slight influence on scroll performance)
+	    nearby = Will process only the stuff in your viewport plus one screen up and down. (Fast initial load, slight influence on scroll performance)
+
+  WARNING: nearby and only are currently not compatible with the progress bar or dialog.
   
   lt_highlight = Object that sets the classes for the highlighting [It is best to edit the CSS instead of touching this]
 
