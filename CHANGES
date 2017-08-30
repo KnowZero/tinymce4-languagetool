@@ -1,3 +1,11 @@
+0.36-Alpha (2017-08-29)
+
+   - Fix progess bar with lt_viewport_process
+   - lt_viewport_process fixes
+   - Minor performance tweak on timer part 2
+   - Added mceLTViewportProcessDisable and mceLTViewportProcessEnable commands
+
+
 0.35-Alpha (2017-08-29)
 
    - Ignore new line text nodes during processing

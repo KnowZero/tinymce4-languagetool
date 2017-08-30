@@ -1,4 +1,4 @@
-Current Version: 0.35-Alpha
+Current Version: 0.36-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
@@ -54,8 +54,11 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
 	    disabled = Will process the entire document off the bat. (Long initial load)
 	    only = Will process only the stuff in your viewport. (Fast initial load, slight influence on scroll performance)
 	    nearby = Will process only the stuff in your viewport plus one screen up and down. (Fast initial load, slight influence on scroll performance)
+            temp = Used internally to replicate disabled
 
-  WARNING: nearby and only are currently not compatible with the progress bar or dialog.
+  WARNING: During only and nearby modes, the Progressbar will only show issues it found in the viewport or nearby. When Dialog is opened, only and nearby mode are temporarily disabled into temp mode and all issues will be loaded. Once dialog is closed, mode will be restored.
+
+You can also manually turn on and off temp mode via execCommand. See below.
   
   lt_highlight = Object that sets the classes for the highlighting [It is best to edit the CSS instead of touching this]
 
@@ -100,6 +103,10 @@ Once I am done coding the basic stuff, I'll clean up the code and make it more p
   mceLTEnable = Enable new content to enter the LT processing queue
 
   mceLTProcess = Process manually
+
+  mceLTViewportProcessDisable = Turn on temp mode for viewport_process
+
+  mceLTViewportProcessEnable = Go back to original mode for viewport_process
 
 #### Syntax:
 
