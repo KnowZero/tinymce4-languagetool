@@ -1,0 +1,111 @@
+.lt-status {
+
+position: relative; left: -95%; vertical-align: baseline
+
+}
+
+.lt-progress {
+display: inline-block; width: 98%; height: 20px;
+}
+
+
+
+progress.lt-progress {
+
+	/* Turns off styling - not usually needed, but good to know. */
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: solid #cccccc 1px;
+
+
+}
+
+/* Polyfill */
+progress.lt-progress[role]:after {
+	background-image: none; /* removes default background from polyfill */
+}
+
+/*
+ * Background of the progress bar background
+ */
+
+/* Firefox and Polyfill */
+progress.lt-progress {
+	background: #cccccc !important;
+}
+
+/* Chrome */
+progress.lt-progress::-webkit-progress-bar {
+	background: #cccccc;
+}
+
+/*
+ * Background of the progress bar value
+ */
+
+/* Firefox */
+progress.lt-progress::-moz-progress-bar {
+	border-radius: 1px;
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+}
+
+/* Chrome */
+progress.lt-progress::-webkit-progress-value {
+	border-radius: 1px;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(43,194,83)),
+		color-stop(1, rgb(84,240,84))
+	);
+	background-image: -webkit-linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+}
+
+/* Polyfill */
+progress.lt-progress[aria-valuenow]:before {
+	border-radius: 1px;
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+	background-image: -ms-linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+	background-image: -o-linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+	
+}
+
+
+.mce-lt-sgcheck:hover {
+  cursor: pointer;
+}
+
+
+
+
+.mce-lt-sgcheck {
+
+    display: inline-block !important;
+    position: absolute !important;
+    top: 0;
+    right: 20%;
+    padding: 8px !important;
+    width: 10% !important;
+}

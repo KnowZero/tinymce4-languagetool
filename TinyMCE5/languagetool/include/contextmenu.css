@@ -1,0 +1,110 @@
+#context-menu-nav {
+    display: none;
+    position: absolute;
+    max-width: 40%;
+    z-index: 65999;
+
+}
+
+#context-menu-ul {
+
+
+    overflow: hidden;
+    border: 1px solid #CCC;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 0px;
+   
+    font-size: 0.8em;
+}
+
+.context-menu-header {
+
+    font-size:100%;
+    background-color: #DDDDDD;
+    font-weight:bold;
+    padding: 0px 5px;
+
+}
+
+
+.context-menu-break {
+
+    font-size:10%;
+    background-color: #DDDDDD;
+    font-weight:bold;
+    padding: 0px 5px;
+   
+}
+
+.context-menu-item {
+    position: relative;
+    float: top;
+    padding: 2px 25px;
+    cursor: pointer;
+}
+
+.context-menu-item:hover {
+    background-color: #DEF;
+}
+
+
+
+
+.context-menu-ignore {
+    padding: 2px 25px;
+    cursor: pointer;
+}
+
+.context-menu-ignore:hover {
+    background-color: #DEF;
+}
+
+
+
+#context-submenu-ul {
+    display: none;
+    z-index: 1001;
+    position: absolute;
+    overflow: hidden;
+    border: 1px solid #CCC;
+    white-space: nowrap;
+    background: #FFF;
+    color: #333;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 0px;
+    font-size: 0.8em;
+}
+
+.context-submenu-ul-left {
+    left: 100%;
+}
+.context-submenu-ul-right {
+    right: 100%;
+}
+
+.context-submenu-ul-top {
+    top: 15px;
+}
+.context-submenu-ul-bottom {
+    bottom: 15px;
+}
+
+
+#context-menu-item-list {
+    padding: 2px 25px;
+    cursor: pointer;
+}
+
+#context-menu-item-list:hover {
+    background-color: #DEF;
+}
+
+
+#context-menu-item-list:hover > #context-submenu-ul {
+	display:block
+}
+

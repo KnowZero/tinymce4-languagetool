@@ -1,4 +1,4 @@
-Current Version: 0.36-Alpha
+Current Version: 0.36.1-Alpha
 
 This is an attempt to port the Language Tool Spelling and Grammar Check to TinyMCE4\. It also does things like highlighting as you type and etc.
 
@@ -126,4 +126,8 @@ You can also manually turn on and off temp mode via execCommand. See below.
 This demo uses this plugin via external_plugin hosted by github, which is not the recommended way to go, especially since github is not a cdn. Add the plugin to your plugins folder and include languagetool
 
   https://knowzero.github.io/tinymce4-languagetool/demo.html
+  
+A TinyMCE 5 quick port has also been done, but TinyMCE4 version is suggested:
+
+  https://knowzero.github.io/tinymce4-languagetool/TinyMCE5/demo.html
 
