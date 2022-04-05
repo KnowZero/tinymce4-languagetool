@@ -24,7 +24,7 @@ var scriptpath=url + '/include/languagetool.min.js';
 
 CKEDITOR.scriptLoader.load( scriptpath, function () {
 
- var LT = new LanguageTool( editor.config );
+var LT = new LanguageTool( editor.config, $ );
 
 
 LT.setFunction('bookmark',function (bm) {
@@ -33,6 +33,10 @@ return editor.getSelection().createBookmarks(true);
 } else {
 return editor.getSelection().selectBookmarks(bm);
 }
+});
+	
+LT.setFunction('window',function () {
+return editor.window;
 });
 
 LT.setFunction('body',function () {
